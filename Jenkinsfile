@@ -20,15 +20,19 @@ pipeline {
          }
       }
     }
-   stage('depolying articrafts using Rundeck'){
-   agents any
-   steps{
-      script{
-      step([$class: "RundeckNotifier", rundeckInstance: "Rundeck", shouldFailTheBuild: true, shouldWaitForRundeckJob: true, 
-      options: """ BUILD_VERSION=$BUILD_NUMBER """, UUID:"90382f00-1180-4c7c-9bae-1b43dd702af1"])
-      }
+   stage('Execute Rundeck job') {
+   steps {
+     script {
+       step([$class: "RundeckNotifier",
+       includeRundeckLogs: true,
+       rundeckInstance: "rundeck",
+       UUId: '90382f00-1180-4c7c-9bae-1b43dd702af1',
+       shouldFailTheBuild: true,
+       shouldWaitForRundeckJob: true,
+       tailLog: true])
+     }
    }
-   }
+  } 
   }
 
 }
