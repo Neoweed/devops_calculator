@@ -14,10 +14,12 @@ pipeline {
       }
     }
     stage('Docker Hub') {
-    steps {
-         withDockerRegistry([credentialsId='DockerHub' url=""]){
-            sh 'docker push akhilank1937/akhilbuild:1.0'
-         }
+      steps 
+      {
+        withDockerRegistry([credentialsId: 'DockerHub' url:""])
+        {
+          sh 'docker push akhilank1937/akhilbuild:1.0'
+        }
       }
     }
    stage('Execute Rundeck job') {
