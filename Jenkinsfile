@@ -28,7 +28,7 @@ pipeline {
        step([$class: "RundeckNotifier",
        includeRundeckLogs: true,
        rundeckInstance: "rundeck",
-       jobId: '90382f00-1180-4c7c-9bae-1b43dd702af1',
+       jobId: '399edaf2-b971-494e-aa27-7827e208644d',
        shouldFailTheBuild: true,
        shouldWaitForRundeckJob: true,
        tailLog: true])
