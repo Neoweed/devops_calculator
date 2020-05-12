@@ -16,7 +16,7 @@ pipeline {
     stage('Docker Hub') {
       steps 
       {
-        withDockerRegistry([credentialsId: 'DockerHub' url:""])
+        withDockerRegistry([credentialsId: 'DockerHub', url:""])
         {
           sh 'docker push akhilank1937/akhilbuild:1.0'
         }
