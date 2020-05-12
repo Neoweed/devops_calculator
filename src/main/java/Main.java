@@ -1,4 +1,4 @@
-package calculator;
+/*package calculator;
 import java.util.*;
 public class Main
 {
@@ -70,4 +70,11 @@ public class Main
             System.out.println("\n");
             }while(flag==0);
     }
+}*/
+public class Main
+{
+public static void main(String args[])
+{
+System.out.println("Hello");
+}
 }
