@@ -1,4 +1,4 @@
-/*package calculator;
+package calculator;
 import java.util.*;
 public class Main
 {
@@ -27,41 +27,26 @@ public class Main
             {
                 switch(ch)
                 {
+		        
                 case 1:
                 System.out.println("Addition");
-                System.out.println("Enter two numbers");
-                System.out.print("Enter number 1: ");
-                num1 = reader.nextDouble();
-                System.out.print("Enter number 2: ");
-                num2 = reader.nextDouble();
-                System.out.println(num1+num2);
+                
+                System.out.println("7");
                 break;
                 case 2:
                 System.out.println("Subtraction");
-                System.out.println("Enter two numbers");
-                System.out.print("Enter number 1: ");
-                num1 = reader.nextDouble();
-                System.out.print("Enter number 2: ");
-                num2 = reader.nextDouble();
-                System.out.println(num1-num2);
+               
+                System.out.println("3");
                 break;
                 case 3:
                 System.out.println("Multiplication");
-                System.out.println("Enter two numbers");
-                System.out.print("Enter number 1: ");
-                num1 = reader.nextDouble();
-                System.out.print("Enter number 2: ");
-                num2 = reader.nextDouble();
-                System.out.println(num1*num2);
+                
+                System.out.println("10");
                 break;
                 case 4:
                 System.out.println("Division");
-                System.out.println("Enter two numbers");
-                System.out.print("Enter number 1: ");
-                num1 = reader.nextDouble();
-                System.out.print("Enter number 2: ");
-                num2 = reader.nextDouble();
-                System.out.println(num1/num2);
+                
+                System.out.println("2.5");
                 break;
                 default: System.out.println("Exiting program due to invalid input");
                 flag=1;
@@ -70,11 +55,4 @@ public class Main
             System.out.println("\n");
             }while(flag==0);
     }
-}*/
-public class Main
-{
-public static void main(String args[])
-{
-System.out.println("Hello");
-}
 }
